@@ -1,0 +1,140 @@
+body {
+    background-color: #797676;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.main-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px; /* Space between calculator and history */
+    width: 90%;
+    max-width: 1200px;
+}
+
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    width: 320px;
+}
+
+.display {
+    background-color: #333;
+    color: #fff;
+    text-align: right;
+    padding: 20px;
+    font-size: 2rem;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: inset 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+.btn:active {
+    box-shadow: none;
+    transform: translateY(2px);
+}
+
+.operator, .equal {
+    background-color: #f57c00;
+}
+
+.equal {
+    grid-row: span 2;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+.footer {
+    text-align: center;
+    color: #fff;
+    font-size: 0.8rem;
+    margin-top: 15px;
+}
+
+.history-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#toggle-history {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #f57c00;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+#toggle-history:active {
+    box-shadow: none;
+    transform: translateY(2px);
+}
+
+.history-table {
+    width: 100%;
+    max-width: 500px;
+    border-collapse: collapse;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: none; /* Initially hidden */
+}
+
+.history-table th, .history-table td {
+    padding: 10px;
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+.history-table th {
+    background-color: #f57c00;
+}
+
+.history-table tbody tr:nth-child(odd) {
+    background-color: #555;
+}

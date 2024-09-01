@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced 3D Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1><b>Enhanced 3D Calculator</b></h1>
+    <div class="main-container">
+        <div class="calculator-container">
+            <div class="calculator">
+                <div class="display" id="display">0</div>
+                <div class="buttons">
+                    <button class="btn ac">AC</button>
+                    <button class="btn del">DEL</button>
+                    <button class="btn operator">/</button>
+                    <button class="btn operator">*</button>
+                    <button class="btn operator">%</button>
+                    <button class="btn operator">√</button>
+                    <button class="btn operator">^</button>
+                    <button class="btn operator">-</button>
+                    <button class="btn number">7</button>
+                    <button class="btn number">8</button>
+                    <button class="btn number">9</button>
+                    <button class="btn operator">+</button>
+                    <button class="btn number">4</button>
+                    <button class="btn number">5</button>
+                    <button class="btn number">6</button>
+                    <button class="btn equal">=</button>
+                    <button class="btn number">1</button>
+                    <button class="btn number">2</button>
+                    <button class="btn number">3</button>
+                    <button class="btn number zero">0</button>
+                    <button class="btn dot">.</button>
+                    <button class="btn dot">M+</button>
+                </div>
+                <div class="footer">Developed by Parthdev</div>
+            </div>
+        </div>
+
+        <div class="history-container">
+            <button id="toggle-history">Toggle History</button>
+            <table class="history-table" id="history-table">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Expression</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody id="history">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
